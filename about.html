@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="header w-full flex justify-between md:px-[186px] bg-white shadow-xl fixed p-4">
+        <a href="#home.html" class="logo text-green-400 font-bold text-4xl"><i class="text-3xl font-bold text-green-600 ri-apple-fill"></i>Juice & Jam</a>
+        <div class="menu md:flex">
+            <ul class="navbar md:flex md:ml-[150px] gap-5 text-center text-green-500 mt-2">
+                <li class="hover:text-red-600 hover:scale-105 duration-300 active"><a href="index.html">home</a></li>
+                <li class="hover:text-red-600 hover:scale-105 duration-300"><a href="about.html">about</a></li>
+                <li class="hover:text-red-600 hover:scale-105 duration-300"><a href="services.html">services</a></li>
+                <li class="hover:text-red-600 hover:scale-105 duration-300"><a href="blog.html">blogs</a></li>
+                <!-- <li class="hover:text-red-600 hover:scale-105 duration-300"><a href="gallery.html">gallery</a></li> -->
+                <li class="hover:text-red-600 hover:scale-105 duration-300"><a href="contact.html">contact</a></li>
+            </ul>
+            <div class="user">
+                <div class="user1 flex justify-between">
+                    <form action="" class="search-form pl-3 pr-3 flex bg-white rounded shadow">
+                        <input type="search" placeholder="search here..." id="search-box" class="pr-3 bg-none outline-none p-2 w-[300px]">
+                        <button class="search" onclick="ok();"><i class="ri-search-line text-black text-xl"></i></button>
+                    </form>
+                    <a href="user.html"><i class="ri-user-line bg-none text-green-400 text-2xl mx-2"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="main md:hidden ml-[-100px]">
+            <i class="ri-menu-line font-bold text-3xl"></i>
+        </div>
+    </header>
+    <section class="about-section1 md:px-[180px]">
+        <div class="py-[100px] p-4">
+            <h1 class="md:text-center text-5xl my-5 font-bold">Welcome to our Fruitant farm</h1>
+            <div class="md:flex md:justify-between">
+                <div class="about-image relative my-3 shadow-2xl">
+                    <img src="./images/240_F_bkajuice9.jpg" alt="" class="h-[300px] md:w-[500px]">
+                </div>
+                <div class="my-3">
+                    <div class="my-4 flex text-gray-500 md:mx-5 md:w-[600px]">
+                        <i class=" fa-solid fa-leaf text-3xl text-green-600 mr-5"></i>Sit amet iaculis diam. Sed venenatis arcu eget mi malesuada tincidunt. Donec convallis quis tellus a vehicula.
+                    </div>
+                    <div class="my-4 flex text-gray-500 md:mx-5 md:w-[600px]">
+                        <i class="fa-solid fa-basket-shopping text-3xl text-green-600 mr-5"></i>Commodo eu ut leo, sit amet iaculis diam. Sed venenatis arcu eget mi malesuada tincidunt. Donec convallis quis.</div>
+                    <div class="my-4 flex text-gray-500 md:mx-5 md:w-[600px]">
+                        <i class="fa-solid fa-house text-3xl text-green-600 mr-5"></i>Donec a sem id arcu facilisis commodo eu ut leo, sit amet iaculis diam. Sed venenatis arcu eget mi malesuada tincidunt.</div>
+                    <div class="my-4 flex text-gray-500 md:mx-5 md:w-[600px]">
+                        <i class="fa-solid fa-snowflake text-3xl text-green-600 mr-5"></i>Donec a sem id arcu facilisis commodo eu ut leo, sit amet iaculis diam. Sed venenatis arcu eget mi malesuada tincidunt.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="fixed h-[50px] mt-[90px] shadow-2xl animate-bounce w-[50px] ml-[95%]">
+        <a href="./about.html"><i class="ri-arrow-up-s-line text-3xl font-bold text-white  bg-green-800 text-center rounded-full p-3"></i></a>
+    </div>
+    <section class="bg-gray-100 md:px-[180px]">
+        <div class="md:flex md:justify-between md:py-[100px]">
+            <div class="md:w-[600px] p-4">
+                <h1 class="text-4xl font-bold my-4">100% Organic</h1>
+                <p class="break-all">Donec a sem id arcu facilisis commodo eu ut leo, sit amet iaculis diam. Sed venenatis arcu eget mi malesuada tincidunt. Donec convallis quis tellus a vehicula, pellentesque gravida augue sem, vel sollicitudin ipsum rutrum eu, eget suscipit
+                    neque dapibus.
+                </p>
+                <button class="hover:text-black bg-green-700 text-white rounded pl-4 text-xl my-[50px] p-3 w-[160px] pr-4">Read More</button>
+            </div>
+            <div class="m-5">
+                <img src="./images/240_F_juicesARuSXL.jpg" alt="" class="md:w-[500px] h-[340px] rounded-full">
+            </div>
+            <div class="md:w-[600px] p-4">
+                <h1 class="text-4xl font-bold my-4">Best quality products</h1>
+                <p class="break-all">Donec a sem id arcu facilisis commodo eu ut leo, sit amet iaculis diam. Sed venenatis arcu eget mi malesuada tincidunt. Donec convallis quis tellus a vehicula, pellentesque gravida augue sem, sollicitudin ipsum rutrum eu, eget suscipit
+                    neque dapibus.
+                </p>
+                <button class=" hover:text-black bg-green-700 text-white rounded pl-4 text-xl my-[50px] p-3 w-[160px] pr-4 ">Read More</button>
+            </div>
+        </div>
+    </section>
+    <section class="md:px-[180px]">
+        <div class="py-[50px] p-4">
+            <h1 class="md:text-center font-bold text-5xl">This Week featured specials for you</h1>
+            <p class="md:text-center text-gray-500 my-5 md:px-[100px]">Pellentesque gravida augue sem, vel sollicitudin ipsum rutrum eu. Donec dignissim metus vel dignissim posuere. Vestibulum tempus arcu sed sapien consectetur, eget suscipit neque dapibus.</p>
+        </div>
+        <div class="md:flex justify-between gap-10 pb-[50px] p-3">
+            <div class="bg-black relative rounded-lg" id="about-img1">
+                <p class="md:px-[180px] text-center pt-[100px] text-white font-bold text-3xl">Fresh Fruits 30% off</p>
+                <button class="hover:bg-green-800 bg-green-700 text-white rounded pl-4 text-xl my-[20px] mx-[190px] p-3 w-[140px] pr-4">Read More</button>
+            </div>
+            <div class="bg-black my-1 relative rounded-lg" id="about-img2">
+                <p class="text-center md:px-[150px] pt-[100px] text-white font-bold text-3xl">Fresh Vegetables 30% off</p>
+                <button class="hover:bg-green-800 bg-green-700 text-white rounded pl-4 text-xl mx-[190px] my-[20px] p-3 w-[140px] pr-4">Read More</button>
+            </div>
+        </div>
+    </section>
+    <section class="about-1">
+        <div class="py-[100px] bg-black opacity-80 w-full md:px-[180px]">
+            <div class="-z-200">
+                <h1 class="text-center p-3 md:px-[250px] text-white text-4xl leading-[60px] font-bold">Garden fresh organic vegetables and fruits from premium gardens</h1>
+                <div class="flex justify-center md:my-[30px] p-3">
+                    <button class="hover:bg-green-800 bg-green-700 text-white rounded pl-4 text-xl my-[20px] p-3 md:w-[140px] pr-4">Shop Now</button>
+                    <button class="bg-white text-gray-500 rounded pl-4 text-xl mx-[50px] my-[20px] p-3 md:w-[200px] pr-4">View Products</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-culture bg-green-100 md:px-[180px] p-4">
+        <h1 class="md:text-center text-5xl font-bold md:pt-[80px]">Why our Agriculture Farm</h1>
+        <p class="md:px-[150px] md:text-center mt-5">Vivamus ultricies ligula sit amet sollicitudin laoreet. Cras blandit vel felis sed semper. Mauris quis fringilla sem, sed egestas tortor. Nam vel quam vel odio vulputate venenatis.</p>
+        <div class="grid md:grid-cols-4 gap-5 py-5">
+            <div class="my-2 flex text-gray-500 mx-1 flex  w-[300px]">
+                <i class=" fa-solid fa-basket-shopping  bg-green-800 p-3 text-3xl rounded-full text-white shadow-3xl mx-5 "></i>Donec convallis quis tellus a vehicula.
+            </div>
+            <div class="my-2 flex text-gray-500 mx-1 flex w-[300px]">
+                <i class=" fa-solid fa-home  bg-green-800 p-3 text-3xl rounded-full text-white shadow-3xl mx-5 "></i>Donec convallis quis tellus a vehicula.
+            </div>
+            <div class="my-2 flex text-gray-500 mx-1 flex w-[300px]">
+                <i class=" fa-solid fa-basket-shopping  bg-green-800 p-3 text-3xl rounded-full text-white shadow-3xl mx-5 "></i>Donec convallis quis tellus a vehicula.
+            </div>
+            <div class="my-2 flex text-gray-500 mx-1 flex w-[300px]">
+                <i class=" fa-solid fa-gift  bg-green-800 p-3 text-3xl rounded-full text-white shadow-3xl mx-5 "></i>Donec convallis quis tellus a vehicula.
+            </div>
+            <div class="my-2 flex text-gray-500 mx-1 flex w-[300px]">
+                <i class="fa-brands fa-apple bg-green-800 p-3 px-4 text-4xl rounded-full text-white shadow-3xl mx-5 "></i>Donec convallis quis tellus a vehicula.
+            </div>
+            <div class="my-2 flex text-gray-500 mx-1 flex w-[300px]">
+                <i class=" fa-solid fa-shopping-cart  bg-green-800 p-3 text-3xl rounded-full text-white shadow-3xl mx-5 "></i>Donec convallis quis tellus a vehicula.
+            </div>
+            <div class="my-2 flex text-gray-500 mx-1 flex w-[300px]">
+                <i class=" fa-solid fa-leaf  bg-green-800 p-3 text-3xl rounded-full text-white shadow-3xl mx-5 "></i>Donec convallis quis tellus a vehicula.
+            </div>
+            <div class="my-2 flex text-gray-500 mx-1 flex w-[300px]">
+                <i class="fa-solid fa-feather bg-green-800 p-3 text-3xl rounded-full text-white shadow-3xl mx-5 "></i>Donec convallis quis tellus a vehicula.
+            </div>
+        </div>
+    </section>
+    <footer class="bg-black opacity-100 md:px-[160px] py-5">
+        <div class="grid md:grid-cols-4 pt-[80px]">
+            <div class="text-white mx-5 ">
+                <h1 class="text-white font-bold pb-[20px] text-2xl ">Contact Info</h1>
+                <p class="text-gray-500 my-2 hover:text-white hover:scale-95 duration-300 "><i class="text-white mx-2 ri-map-pin-2-fill "></i>Jamalpatti Sarsavan Harhua varanasi Uttar Pradesh 221003, India</p>
+                <p class="text-gray-500 my-3 hover:text-white hover:scale-95 duration-300 "><i class="text-white mx-2 ri-phone-fill "></i>Phone: +916393351817</p>
+                <p class="text-gray-500 lowercase hover:text-white hover:scale-95 duration-300 "><i class="text-white mx-2 ri-mail-open-fill "></i>Email: amitalena2724@gmail.com</p>
+            </div>
+            <div class="mx-5 ">
+                <h1 class="text-white font-bold pb-[20px] text-2xl ">Latest News</h1>
+                <div class="my-4 ">
+                    <a href="# " class="flex ">
+                        <img src="./images/images (1) (7).jpeg " alt=" " class="w-[50px] h-[40px] rounded ">
+                        <div class="text-gray-400 mx-3 ">
+                            <h1 class="hover:text-white hover:scale-95 duration-300 ">Vegitable and orgenic fruit</h1>
+                            <p class="hover:text-white ">Oct 15, 2023</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="my-4 ">
+                    <a href="# " class="flex ">
+                        <img src="./images/download (7).jpeg" alt=" " class="w-[50px] h-[40px] rounded ">
+                        <div class="text-gray-400 mx-3 ">
+                            <h1 class="hover:text-white hover:scale-95 duration-300 ">Vegitable and orgenic fruit</h1>
+                            <p class="hover:text-white ">Oct 15, 2023</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="my-4 ">
+                    <a href="# " class="flex ">
+                        <img src="./images/download (16).jpeg " alt=" " class="w-[50px] h-[40px] rounded ">
+                        <div class="text-gray-400 mx-3 ">
+                            <h1 class="hover:text-white hover:scale-95 duration-300 ">Vegitable and orgenic fruit</h1>
+                            <p class="hover:text-white ">Oct 15, 2023</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="text-white mx-5 ">
+                <h1 class="text-white font-bold pb-[20px] text-2xl ">Useful Links</h1>
+                <div class="grid grid-cols-1 text-gray-500 ">
+                    <span class="my-2 hover:text-white hover:scale-95 duration-300 "><a href="about.html ">About Us</a></span>
+                    <span class="my-1 hover:text-white hover:scale-95 duration-300 "><a href="blog.html ">Blog posts</a></span>
+                    <span class="my-1 hover:text-white hover:scale-95 duration-300 "><a href="services.html ">Our services</a></span>
+                    <span class="my-1 hover:text-white hover:scale-95 duration-300 "><a href="contact.html ">ContactUs</a></span>
+                    <span class="my-1 hover:text-white hover:scale-95 duration-300 "><a href="gallery.html ">Food gallery</a></span>
+                </div>
+            </div>
+            <div class="text-white mx-5 ">
+                <h1 class="text-white font-bold pb-[20px] text-2xl ">Quotation</h1>
+                <p class="text-gray-500 my-3 hover:text-white hover:scale-95 duration-300 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, aspernatur.</p>
+                <div class="grid grid-cols-1 ">
+                    <h1 class="text-2xl font-bold my-2 ">Tags</h1>
+                    <div class="w-[250px] ">
+                        <button class="border hover:text-white hover:scale-95 duration-300 my-2 mx-1 w-[100px] p-2 rounded text-gray-500 ">Vegitable</button>
+                        <button class="border hover:text-white hover:scale-95 duration-300 my-2 mx-1 w-[80px] p-2 rounded text-gray-500 ">Fruit</button>
+                        <button class="border hover:text-white hover:scale-95 duration-300 my-2 mx-1 w-[90px] p-2 rounded text-gray-500 ">Organic</button>
+                        <button class="border hover:text-white hover:scale-95 duration-300 my-2 mx-1 w-[90px] p-2 rounded text-gray-500 ">Farming</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="pt-4 px-4 ">
+            <p class="text-gray-500 md:text-center ">© 2023 Fruit.Hub. All rights reserved | Designed by amitkumar</p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".main i").click(function() {
+                $(".menu").toggleClass("main");
+            });
+        });
+    </script>
+</body>
+
+</html>
