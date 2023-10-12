@@ -264,7 +264,7 @@ body::-webkit-scrollbar-thumb {
         background-image: url('./images/240_F_bery.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        height: 35vh;
+        height: 36vh;
         width: 95%;
         background-attachment: fixed;
     }
@@ -352,7 +352,7 @@ body::-webkit-scrollbar-thumb {
         display: none;
     }
     .section6 #big {
-        margin-top: 750px;
+        margin-top: 600px;
     }
     .swiper-button-next:after,
     .swiper-button-prev:after {
@@ -390,6 +390,6 @@ body::-webkit-scrollbar-thumb {
     }
     .farm {
         height: 200px;
-        width: 480px;
+        width: 450px;
     }
 }
