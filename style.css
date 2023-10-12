@@ -256,7 +256,7 @@ body::-webkit-scrollbar-thumb {
         background-image: url('./images/240_F_bkajuice9.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        height: 50vh;
+        height: 40vh;
         width: 95%;
     }
     .section7 {
@@ -264,7 +264,7 @@ body::-webkit-scrollbar-thumb {
         background-image: url('./images/240_F_bery.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        height: 58vh;
+        height: 40vh;
         width: 95%;
         background-attachment: fixed;
     }
@@ -390,6 +390,6 @@ body::-webkit-scrollbar-thumb {
     }
     .farm {
         height: 200px;
-        width: 300px;
+        width: 400px;
     }
 }
