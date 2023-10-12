@@ -1,0 +1,395 @@
+/*fonts */
+
+@font-face {
+    font-family: "Relway-regular";
+    src: url(../fonts/Relaway-regular.ttf)
+}
+
+@font-face {
+    font-family: "Relway-medium";
+    src: url(../fonts/Relaway-Medium.ttf)
+}
+
+@font-face {
+    font-family: "Relway-bold";
+    src: url(../fonts/Relaway-Bold.ttf)
+}
+
+@font-face {
+    font-family: "Relway-semibold";
+    src: url(../fonts/Relaway-SemiBold.ttf)
+}
+
+@font-face {
+    font-family: "Relway-black";
+    src: url(../fonts/Relaway-Black.ttf)
+}
+
+
+/*colors  */
+
+ :root {
+    --green: #bac34e;
+    --black: #222;
+    --light-gray: #666;
+    --light-green: #07971b;
+    --white: #fff;
+    --light-bg: #f3f3f3;
+    --border: .1rem solid rgba(0, 0, 0, 0.1);
+    --box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Relway-regular', sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font: var(--blcack)
+}
+
+body::-webkit-scrollbar {
+    background-color: #07971b;
+    width: 7px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: rgb(255, 255, 255);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(124, 205, 11);
+    border-radius: 50px;
+    border: 1px solid gray;
+}
+
+.header {
+    z-index: 1000;
+}
+
+.header .user {
+    margin-left: 50px;
+}
+
+.navbar a {
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar a:hover,
+.navbar .active {
+    color: #334d12;
+}
+
+.navbar li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #07971b;
+    bottom: -5px;
+    left: 0;
+    transition: all .5s;
+}
+
+.navbar li a:hover:after {
+    width: 100%;
+}
+
+#section1 {
+    background-image: url('./images/240_F_bkajuice9.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+}
+
+#section2 {
+    background-image: url('./images/fresh-healthy.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+}
+
+#section3 {
+    background-image: url('./images/240_F_bery.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+}
+
+#section4 {
+    background-image: url('./images/ripe-fruits-with.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+}
+
+.section3 {
+    background-image: url('./images/240_F-juise.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+.juise1 {
+    padding-top: 5px;
+    border-top: 10px solid red;
+    opacity: 1;
+    transition: all 1s linear;
+    z-index: 1;
+    position: relative;
+}
+
+.juise1:hover {
+    cursor: pointer;
+}
+
+#juice1:hover .t1,
+#juice2:hover .t2,
+#juice3:hover .t3 {
+    display: block;
+    top: 120px;
+    position: absolute;
+    padding: 0px 50px;
+}
+
+
+/* section5 */
+
+.section5 {
+    background-image: url('./images/240_F_bkajuice9.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+}
+
+
+/* section7 */
+
+.section7 {
+    background-image: url('./images/240_F_bery.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 48vh;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+
+/* swipper pagination */
+
+
+/* about section */
+
+.about-image img {
+    position: relative;
+    top: 1%;
+    box-shadow: -5px -15px 1px rgb(124, 205, 11);
+}
+
+#about-img1 {
+    background-image: url('./images/240_F_bery.jpg');
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    width: 600px;
+    height: 350px;
+}
+
+#about-img2 {
+    background-image: url('./images/cornucopia-composition-with-delicious-foods_23-2149103286.avif');
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    width: 600px;
+    height: 350px;
+}
+
+.about-1 {
+    background-image: url('./images/fresh-healthy.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+
+/* services */
+
+.feature {
+    position: absolute;
+    left: 85%;
+    top: 0;
+    border-radius: 0px 0px 0px 60%;
+}
+
+
+/* media quiery */
+
+@media screen and (max-width: 640px) {
+    .section1 {
+        background-image: url('./images/240_F_bkajuice9.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50vh;
+        width: 95%;
+    }
+    .section5 {
+        margin: 10px;
+        background-image: url('./images/240_F_bkajuice9.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50vh;
+        width: 95%;
+    }
+    .section7 {
+        margin: 10px;
+        background-image: url('./images/240_F_bery.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 58vh;
+        width: 95%;
+        background-attachment: fixed;
+    }
+    .section3 {
+        margin: 10px;
+        background-image: url('./images/240_F-juise.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50vh;
+        width: 95%;
+        background-attachment: fixed;
+    }
+    #section1 {
+        padding-top: 50px;
+        padding-bottom: 1px;
+        background-image: url('./images/240_F_bkajuice9.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 60vh;
+        width: 100%;
+    }
+    #section2 {
+        padding-top: 50px;
+        padding-bottom: 1px;
+        background-image: url('./images/fresh-healthy.avif');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 60vh;
+        width: 100%;
+    }
+    #section3 {
+        padding-top: 50px;
+        padding-bottom: 1px;
+        background-image: url('./images/240_F_bery.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 60vh;
+        width: 100%;
+    }
+    #section4 {
+        padding-top: 50px;
+        padding-bottom: 1px;
+        background-image: url('./images/ripe-fruits-with.avif');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 60vh;
+        width: 100%;
+    }
+    footer {
+        margin: 10px;
+    }
+    .menu {
+        display: none;
+        width: 99%;
+        /* text-align: center; */
+        transition: all .5s;
+        float: none;
+        position: absolute;
+        background: linear-gradient(34deg, rgb(187, 187, 186) 50%, white 50%);
+        left: 0;
+        top: 72px;
+        padding: 30px 0px;
+        border-top: 1px solid gray;
+        /* clip-path: circle(0% at 100% 0%); */
+    }
+    .navbar li {
+        color: #222;
+        display: block;
+        text-align: center;
+        margin: 15px 5px;
+    }
+    .navbar li a ::after {
+        display: none;
+    }
+    .main i {
+        margin-right: 5px;
+    }
+    .main {
+        transition: all 1s;
+        cursor: pointer;
+        display: block;
+        /* clip-path: circle(112% at 100%); */
+    }
+    .user .user1 {
+        display: none;
+    }
+    .section6 #big {
+        margin-top: 920px;
+    }
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        display: none;
+        font-family: swiper-icons;
+        font-size: var(--swiper-navigation-size);
+        text-transform: none!important;
+        letter-spacing: 0;
+        color: greenyellow;
+        font-variant: initial;
+        line-height: 1
+    }
+    .swiper-pagination-clickable .swiper-pagination-bullet {
+        margin-top: -50px;
+        background-color: #28b40c;
+        height: 12px;
+        width: 12px;
+        border: 1px solid #fff;
+    }
+    #about-img1 {
+        background-image: url('./images/240_F_bery.jpg');
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-size: cover;
+        width: 100%;
+        height: 350px;
+    }
+    #about-img2 {
+        background-image: url('./images/cornucopia-composition-with-delicious-foods_23-2149103286.avif');
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-size: cover;
+        width: 100%;
+        height: 350px;
+    }
+    .farm {
+        height: 200px;
+        width: 380px;
+    }
+}
