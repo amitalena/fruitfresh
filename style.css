@@ -283,7 +283,7 @@ body::-webkit-scrollbar-thumb {
         background-image: url('./images/240_F_bkajuice9.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        height: 60vh;
+        height: 40vh;
         width: 100%;
     }
     #section2 {
@@ -292,7 +292,7 @@ body::-webkit-scrollbar-thumb {
         background-image: url('./images/fresh-healthy.avif');
         background-repeat: no-repeat;
         background-size: cover;
-        height: 60vh;
+        height: 40vh;
         width: 100%;
     }
     #section3 {
@@ -301,7 +301,7 @@ body::-webkit-scrollbar-thumb {
         background-image: url('./images/240_F_bery.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        height: 60vh;
+        height: 40vh;
         width: 100%;
     }
     #section4 {
@@ -310,7 +310,7 @@ body::-webkit-scrollbar-thumb {
         background-image: url('./images/ripe-fruits-with.avif');
         background-repeat: no-repeat;
         background-size: cover;
-        height: 60vh;
+        height: 40vh;
         width: 100%;
     }
     footer {
