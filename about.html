@@ -15,9 +15,9 @@
 
 <body>
     <header class="header w-full flex justify-between md:px-[186px] bg-white shadow-xl fixed p-4">
-        <a href="#home.html" class="logo text-green-400 font-bold text-4xl"><i class="text-3xl font-bold text-green-600 ri-apple-fill"></i>Juice & Jam</a>
+        <a href="/" class="logo text-green-600 font-bold text-4xl"><i class="text-3xl font-bold text-red-600 ri-apple-fill"></i>Fresh Zilla</a>
         <div class="menu md:flex">
-            <ul class="navbar md:flex md:ml-[150px] gap-5 text-center text-green-500 mt-2">
+            <ul class="navbar md:flex md:ml-[150px] gap-5 text-center text-green-600 mt-2">
                 <li class="hover:text-red-600 hover:scale-105 duration-300 active"><a href="index.html">home</a></li>
                 <li class="hover:text-red-600 hover:scale-105 duration-300"><a href="about.html">about</a></li>
                 <li class="hover:text-red-600 hover:scale-105 duration-300"><a href="services.html">services</a></li>
@@ -28,14 +28,15 @@
             <div class="user">
                 <div class="user1 flex justify-between">
                     <form action="" class="search-form pl-3 pr-3 flex bg-white rounded shadow">
-                        <input type="search" placeholder="search here..." id="search-box" class="pr-3 bg-none outline-none p-2 w-[300px]">
+                        <input type="search" placeholder="search here..." id="search-box" class=" pr-3 bg-none outline-none w-[250px] p-2">
                         <button class="search" onclick="ok();"><i class="ri-search-line text-black text-xl"></i></button>
                     </form>
-                    <a href="user.html"><i class="ri-user-line bg-none text-green-400 text-2xl mx-2"></i></a>
+                    <a href="login.html" class="bg-green-600 mx-1 text-white text-center p-2 rounded">User</a>
+                    <a href="shoping-cart.html" class="bg-red-600 mx-1 text-white text-center p-2 rounded">Card</a>
                 </div>
             </div>
         </div>
-        <div class="main md:hidden ml-[-100px]">
+        <div class="main md:hidden">
             <i class="ri-menu-line font-bold text-3xl"></i>
         </div>
     </header>
@@ -60,12 +61,12 @@
             </div>
         </div>
     </section>
-    <div class="fixed h-[50px] mt-[5px] shadow-2xl animate-bounce w-[50px] ml-[77%]">
+    <div class="fixed h-[50px] mt-[90px] shadow-2xl animate-bounce w-[50px] ml-[95%]">
         <a href="./about.html"><i class="ri-arrow-up-s-line text-3xl font-bold text-white  bg-green-800 text-center rounded-full p-3"></i></a>
     </div>
-    <section class="bg-gray-100 md:px-[180px] p-3">
+    <section class="bg-gray-100 md:px-[180px]">
         <div class="md:flex md:justify-between md:py-[100px]">
-            <div class="md:w-[600px]">
+            <div class="md:w-[600px] p-4">
                 <h1 class="text-4xl font-bold my-4">100% Organic</h1>
                 <p class="break-all">Donec a sem id arcu facilisis commodo eu ut leo, sit amet iaculis diam. Sed venenatis arcu eget mi malesuada tincidunt. Donec convallis quis tellus a vehicula, pellentesque gravida augue sem, vel sollicitudin ipsum rutrum eu, eget suscipit
                     neque dapibus.
@@ -73,11 +74,11 @@
                 <button class="hover:text-black bg-green-700 text-white rounded pl-4 text-xl my-[50px] p-3 w-[160px] pr-4">Read More</button>
             </div>
             <div class="m-5">
-                <img src="./images/240_F_juicesARuSXL.jpg" alt="" class="md:w-[500px] h-[440px] rounded-full">
+                <img src="./images/240_F_juicesARuSXL.jpg" alt="" class="md:w-[500px] h-[340px] rounded-full">
             </div>
-            <div class="md:w-[600px]">
+            <div class="md:w-[600px] p-4">
                 <h1 class="text-4xl font-bold my-4">Best quality products</h1>
-                <p class="break-all">Donec a sem id arcu facilisis commodo eu ut leo, sit amet iaculis diam. Sed venenatis arcu eget malesuada tincidunt. Donec convallis quis tellus a vehicula, pellentesque gravida augue sem, sollicitudin ipsum rutrum eu, eget suscipit
+                <p class="break-all">Donec a sem id arcu facilisis commodo eu ut leo, sit amet iaculis diam. Sed venenatis arcu eget mi malesuada tincidunt. Donec convallis quis tellus a vehicula, pellentesque gravida augue sem, sollicitudin ipsum rutrum eu, eget suscipit
                     neque dapibus.
                 </p>
                 <button class=" hover:text-black bg-green-700 text-white rounded pl-4 text-xl my-[50px] p-3 w-[160px] pr-4 ">Read More</button>
@@ -85,7 +86,7 @@
         </div>
     </section>
     <section class="md:px-[180px]">
-        <div class="py-[50px]">
+        <div class="py-[50px] p-4">
             <h1 class="md:text-center font-bold text-5xl">This Week featured specials for you</h1>
             <p class="md:text-center text-gray-500 my-5 md:px-[100px]">Pellentesque gravida augue sem, vel sollicitudin ipsum rutrum eu. Donec dignissim metus vel dignissim posuere. Vestibulum tempus arcu sed sapien consectetur, eget suscipit neque dapibus.</p>
         </div>
@@ -101,7 +102,7 @@
         </div>
     </section>
     <section class="about-1">
-        <div class="py-[100px] bg-black opacity-80 w-full md:px-[180px] p-3">
+        <div class="py-[100px] bg-black opacity-80 w-full md:px-[180px]">
             <div class="-z-200">
                 <h1 class="text-center p-3 md:px-[250px] text-white text-4xl leading-[60px] font-bold">Garden fresh organic vegetables and fruits from premium gardens</h1>
                 <div class="flex justify-center md:my-[30px] p-3">
@@ -111,7 +112,7 @@
             </div>
         </div>
     </section>
-    <section class="about-culture bg-green-100 md:px-[170px] p-3">
+    <section class="about-culture bg-green-100 md:px-[180px] p-4">
         <h1 class="md:text-center text-5xl font-bold md:pt-[80px]">Why our Agriculture Farm</h1>
         <p class="md:px-[150px] md:text-center mt-5">Vivamus ultricies ligula sit amet sollicitudin laoreet. Cras blandit vel felis sed semper. Mauris quis fringilla sem, sed egestas tortor. Nam vel quam vel odio vulputate venenatis.</p>
         <div class="grid md:grid-cols-4 gap-5 py-5">
